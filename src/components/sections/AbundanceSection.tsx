@@ -19,12 +19,14 @@ export const AbundanceSection: React.FC = () => (
       }}
     />
 
-    <div className="absolute inset-0">
-      <Koi color="orange" size={150} initialX="10%" initialY="20%" pattern="circle" direction={1} speed={1.2} />
-      <Koi color="red" size={180} initialX="70%" initialY="50%" pattern="figure8" direction={-1} speed={0.8} />
-      <Koi color="black" size={120} initialX="30%" initialY="70%" pattern="horizontal" direction={1} speed={1} />
-      <Koi color="gold" size={200} initialX="80%" initialY="30%" pattern="random" direction={-1} speed={1.5} />
-      <Koi color="calico" size={160} initialX="40%" initialY="80%" pattern="circle" direction={1} speed={0.9} />
+    // Di section Abundance
+    <div className="absolute inset-0 overflow-hidden">
+      <Koi color="orange" size={140} initialX="5%" initialY="20%" direction={1} speed={1.2} />
+      <Koi color="red" size={160} initialX="70%" initialY="50%" direction={-1} speed={0.9} />
+      <Koi color="black" size={130} initialX="30%" initialY="70%" direction={1} speed={1.5} />
+      <Koi color="gold" size={200} initialX="80%" initialY="30%" direction={-1} speed={0.7} />
+      <Koi color="calico" size={150} initialX="40%" initialY="80%" direction={1} speed={1.1} />
+      <Koi color="white" size={120} initialX="60%" initialY="10%" direction={-1} speed={1.3} />
     </div>
 
     <SectionCard
