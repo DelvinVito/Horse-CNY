@@ -1,3 +1,9 @@
 {
-  "allowScripts": ["npm:@swc/core"]
+  "allowScripts": ["npm:@swc/core"],
+    "imports": {
+    "gh-pages": "npm:gh-pages"
+  },
+  "tasks": {
+    "deploy": "deno run -A npm:gh-pages -d dist"
+  }
 }

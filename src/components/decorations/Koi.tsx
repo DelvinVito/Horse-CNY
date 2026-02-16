@@ -95,6 +95,7 @@ export const Koi: React.FC<KoiProps> = ({
   const hasSpots = colors.spots && colors.spots.length > 0;
 
   // Gunakan seed acak yang tetap untuk instance ini (berdasarkan waktu + random)
+  // eslint-disable-next-line react-hooks/purity
   const seedRef = React.useRef(Math.random() * 100);
   const seed = seedRef.current;
   const motionPath = useMemo(() => generateRandomMotion(size, direction, seed), [size, direction, seed]);
